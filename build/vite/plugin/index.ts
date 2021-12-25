@@ -14,6 +14,7 @@ import { configVisualizerConfig } from './visualizer';
 import { configThemePlugin } from './theme';
 import { configImageminPlugin } from './imagemin';
 import { configSvgIconsPlugin } from './svgSprite';
+import { configVxeTableThemePlugin } from './theme-vxe-table';
 
 export function createVitePlugins(viteEnv: ViteEnv, isBuild: boolean) {
   const {
@@ -73,6 +74,8 @@ export function createVitePlugins(viteEnv: ViteEnv, isBuild: boolean) {
     // vite-plugin-pwa
     vitePlugins.push(configPwaConfig(viteEnv));
   }
+
+  vitePlugins.push(configVxeTableThemePlugin());
 
   return vitePlugins;
 }
