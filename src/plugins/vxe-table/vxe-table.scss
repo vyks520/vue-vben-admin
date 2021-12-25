@@ -1,2 +1,7 @@
 @import 'vxe-table/styles/variable.scss';
-@import'vxe-table/styles/modules.scss';
+@import 'vxe-table/styles/modules.scss';
+
+/* 覆盖 windicss layer base */
+i {
+  border-color: initial;
+}
